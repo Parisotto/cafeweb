@@ -1,0 +1,115 @@
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
+html { background-color: #2d6ed8; }
+html, body { overflow-x: hidden; }
+body { 
+	margin:0; 
+	font-family: 'Josefin Sans', sans-serif;
+}
+nav h1 { 
+	font-size:1px;
+	display:block;
+	width:25px;
+	height:25px;
+	position:absolute;
+	right:5px;
+	background:url("../img/menu.png") center center no-repeat;
+	line-height:30px;
+	text-align:center;
+	color:#2256ab;
+	margin-top:5px;
+}
+nav {
+	text-transform:uppercase;
+	position: fixed;
+	top: 0;
+	left: -215px;
+	z-index: 1;
+	width: 250px;
+	height: 100%;
+	margin:0;;
+	transition: all 0.5s ease;
+}
+nav:hover, nav:focus, nav:active {
+	transform: translate(215px,0);
+}
+nav:hover h1, nav:focus h1, nav:active h1 {
+	background:none;
+	visibility:hidden;
+	opacity:0;
+}
+
+menu { 
+   padding:0; 
+   width:215px;
+   height:100%;
+   margin:0;		   
+   background: #183c79;
+   box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3);
+}
+menu ul { padding:0; }
+menu li a {
+display: block;
+border-bottom: 1px solid #2256ab;
+margin: 0 10px;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+}
+menu li a:hover {
+background: #2256ab;
+color: #fff;
+}
+
+section figure { 
+	width:225px;
+	position:absolute;			
+	margin:-162px 0 0 -112px; 
+	top:50%;
+	left:50%;
+}
+section figure:hover figcaption {
+	opacity:1;
+	transition:1s;
+}
+section figcaption {
+	position:absolute;
+	width:225px;
+	height:165px;
+	padding-top:60px;
+	top:0;
+	left:0;
+	opacity:0;
+	transition:2s;
+}
+section figure img {
+	position:relative;
+}
+img#sobre-img {
+	z-index:100;
+	width:101px;
+	height:101px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-51px 0 0 -51px;
+}
+footer { 
+	position:fixed; 
+	bottom:0; 
+	width:100%; 
+	background:#2256ab; 
+	padding:10px; 
+}
+h1.marca, h2.marca { 
+	font-weight:400;
+	font-size: 16px;
+	line-height:90%;
+	margin:0;
+	color:#fff;			
+	text-align:center; 
+}
+h1.marca { font-size:72px; font-weight:100; }
+footer span { position:absolute; bottom:0; right:0; margin:0 30px 5px 0; }
+footer span a { color:#5797ff; text-decoration:none;}
+footer span a:hover { color:#fff; }
